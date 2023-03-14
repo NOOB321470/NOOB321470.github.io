@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .block {
+            width: 300px;
+            height: 300px;
+            color: white;
+            background-color: rgb(243, 146, 20);
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            white-space: nowrap;
+            position: relative;
+            border-radius: 50%;
+        }
+        .block::before {
+            content: "🔥";
+            position: absolute;
+            width: 90%;
+            height: 5px;
+            background-color: white;
+            top: 10%;
+        }
+        .block::after {
+            content: "👽";
+            position: absolute;
+            width: 90%;
+            height: 5px;
+            background-color: white;
+            bottom: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">Не просто текст</div>
+</body>
+</html>
